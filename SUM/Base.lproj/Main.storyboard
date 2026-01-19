@@ -24,23 +24,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGR-9v-juo">
-                                <rect key="frame" x="70" y="538" width="253" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="jPN-T8-1bA"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="SUM">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="ResultofSum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zeb-f8-1wu"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF1-ph-iw6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF1-ph-iw6">
                                 <rect key="frame" x="70" y="640" width="253" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="g8s-8H-dLX"/>
+                                    <constraint firstAttribute="height" constant="52" id="qfl-hc-zma"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -69,29 +56,60 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGR-9v-juo">
+                                <rect key="frame" x="70" y="538" width="107" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="aeL-Js-V3h"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SUM">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ResultofSum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zeb-f8-1wu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeS-ZF-owS">
+                                <rect key="frame" x="216" y="538" width="107" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="0NK-g6-skd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="ilp-em-Uk1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Clear">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8s-WS-HNz"/>
+                                    <action selector="ResultofSum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMc-ol-r70"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.89338734285118648" green="0.74682669969395454" blue="0.24526669659699493" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="tintColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wF1-ph-iw6" secondAttribute="trailing" constant="70" id="7Uo-1i-CXe"/>
                             <constraint firstItem="mFm-gb-NzN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="8iN-nM-rh9"/>
                             <constraint firstItem="mFm-gb-NzN" firstAttribute="top" secondItem="z6e-FP-9SB" secondAttribute="bottom" constant="38" id="AV3-EN-iRh"/>
                             <constraint firstItem="IHJ-7N-AVb" firstAttribute="top" secondItem="HNk-sh-Uch" secondAttribute="bottom" constant="8.6666666666666288" id="DAN-Mf-APw"/>
                             <constraint firstItem="z6e-FP-9SB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="DHE-en-Azh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HNk-sh-Uch" secondAttribute="trailing" constant="170" id="DbN-Uq-jpY"/>
+                            <constraint firstItem="IeS-ZF-owS" firstAttribute="top" secondItem="IHJ-7N-AVb" secondAttribute="bottom" constant="46" id="DhM-se-x2u"/>
                             <constraint firstItem="IHJ-7N-AVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Enc-ou-Ddo"/>
-                            <constraint firstItem="wF1-ph-iw6" firstAttribute="top" secondItem="dGR-9v-juo" secondAttribute="bottom" constant="50" id="IVA-Eu-RFC"/>
                             <constraint firstItem="z6e-FP-9SB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="LjL-wf-K1b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z6e-FP-9SB" secondAttribute="trailing" constant="70" id="NGm-8W-3VG"/>
+                            <constraint firstItem="dGR-9v-juo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Tn8-zy-RzQ"/>
                             <constraint firstItem="HNk-sh-Uch" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="VZu-fk-Zpl"/>
-                            <constraint firstItem="dGR-9v-juo" firstAttribute="top" secondItem="IHJ-7N-AVb" secondAttribute="bottom" constant="46" id="bbq-yU-BMQ"/>
-                            <constraint firstItem="wF1-ph-iw6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="f92-No-nLf"/>
+                            <constraint firstItem="wF1-ph-iw6" firstAttribute="top" secondItem="IeS-ZF-owS" secondAttribute="bottom" constant="50" id="W7p-6j-WSb"/>
+                            <constraint firstItem="wF1-ph-iw6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Xey-6H-Sz3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IeS-ZF-owS" secondAttribute="trailing" constant="70" id="fNA-lm-spr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mFm-gb-NzN" secondAttribute="trailing" constant="70" id="fNq-xv-j08"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dGR-9v-juo" secondAttribute="trailing" constant="216" id="h6S-5w-TJq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IHJ-7N-AVb" secondAttribute="trailing" constant="70" id="hoW-Oe-m8M"/>
+                            <constraint firstItem="IeS-ZF-owS" firstAttribute="leading" secondItem="dGR-9v-juo" secondAttribute="trailing" constant="39" id="kJQ-0j-m0o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wF1-ph-iw6" secondAttribute="trailing" constant="70" id="moJ-Gm-KIe"/>
                             <constraint firstItem="HNk-sh-Uch" firstAttribute="top" secondItem="mFm-gb-NzN" secondAttribute="bottom" constant="7.3333333333333144" id="nTd-hb-CO3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dGR-9v-juo" secondAttribute="trailing" constant="70" id="vjh-el-YZm"/>
-                            <constraint firstItem="dGR-9v-juo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="zT7-8H-g73"/>
+                            <constraint firstItem="dGR-9v-juo" firstAttribute="top" secondItem="IHJ-7N-AVb" secondAttribute="bottom" constant="46" id="xqO-Is-MKq"/>
                         </constraints>
                     </view>
                     <connections>

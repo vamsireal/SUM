@@ -29,6 +29,11 @@ class ViewController: UIViewController {
                     Result.text = "Please enter valid numbers"
                 }
     }
+    @IBAction func ClearButton(_ sender: Any) {
+        Input1.text = ""
+        Input2.text = ""
+        Result.text = ""
+    }
 }
 
 
